@@ -109,11 +109,11 @@ You will find the easiest way to run Python on your computer (Windows, Mac OS X 
 
 ### Install and Run Python in Mac OS X
 
-1. Go to Download Python page on the official site and click Download Python 3.6.0 (You may see different version name).
+1. Go to Download Python page on the official site and click **Download Python 3.6.0** (You may see different version name).
 2. When the download is complete, open the package and follow the instructions. You will see "The installation was successful" message when Python is successfully installed.
 3. It's recommended to download a good text editor before you get started. If you are a beginner, I suggest you to download Sublime Text. It's free.
 4. The installation process is straight forward. Run the Sublime Text Disk Image file you downloaded and follow the instructions.
-5. Open Sublime Text and go to File > New File (Shortcut: Cmd+N). Then, save (Cmd+S or File > Save) the file with .py extension like: hello.py or first-program.py
+5. Open Sublime Text and go to **File > New File** (Shortcut: **Cmd+N**). Then, save (**Cmd+S** or **File > Save**) the file with **.py** extension like: hello.py or first-program.py
 6. Write the code and save it again. For starters, you can copy the code below:
     
     ```py
@@ -121,7 +121,7 @@ You will find the easiest way to run Python on your computer (Windows, Mac OS X 
     ```
 
     This simple program outputs "Hello, World!"
-7. Go to Tool > Build (Shortcut: Cmd + B). You will see the output at the bottom of Sublime Text.Congratulations, you've successfully run your first Python program.
+7. Go to **Tool > Build** (Shortcut: **Cmd + B**). You will see the output at the bottom of Sublime Text.Congratulations, you've successfully run your first Python program.
 
 ### Install and Run Python in Linux (Ubuntu)
 
@@ -147,25 +147,25 @@ However, Python is one of the easiest language to learn, and creating "Hello, Wo
 
 **Line 1:** # Add two numbers
 
-Any line starting with # in Python programming is a comment.
+Any line starting with `#` in Python programming is a comment.
 
 Comments are used in programming to describe the purpose of the code. This helps you as well as other programmers to understand the intent of the code. Comments are completely ignored by compilers and interpreters.
 
 **Line 2:** num1 = 3
 
-Here, num1 is a variable. You can store a value in a variable. Here, 3 is stored in this variable.
+Here, `num1` is a variable. You can store a value in a variable. Here, 3 is stored in this variable.
 
 **Line 3:** num2 = 5
 
-Similarly, 5 is stored in num2 variable.
+Similarly, 5 is stored in `num2` variable.
 
 **Line 4:** sum = num1+num2
 
-The variables num1 and num2 are added using + operator. The result of addition is then stored in another variable sum.
+The variables `num1` and `num2` are added using + operator. The result of addition is then stored in another variable `sum`.
 
 **Line 5:** print(sum)
 
-The print() function prints the output to the screen. In our case, it prints 8 on the screen.
+The `print()` function prints the output to the screen. In our case, it prints 8 on the screen.
 
 ### Few Important Things to Remember
 
