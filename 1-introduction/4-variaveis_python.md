@@ -319,4 +319,4 @@ Quando você executa o programa, a saída será:
 {'e', 'a', 'o', 'i', 'u'}
 ```
 
-No programa acima, criamos uma lista de `fruits`, tuple de `numbers` , dicionário `dict` com valores com chaves desginadas para cada valor e conjunto de `vowels` .
+No programa acima, criamos uma lista de `fruits`, tuple de `numbers` , dicionário `dict` com valores com chaves desginadas para cada valor e conjunto de `vowels`.
