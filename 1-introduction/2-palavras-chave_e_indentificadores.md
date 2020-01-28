@@ -15,14 +15,15 @@ Existem 33 palavras-chave no Python 3.7. Esse número pode variar um pouco ao lo
 Todas as palavras-chave exceto True, Falsee e None estão em minúsculas e devem ser escritas como estão. A lista de todas as palavras-chave é fornecida abaixo.
 
 Palavras-chave em Python
-| | | | | |
-| --- | --- | --- | --- | --- |
+
+| - | - | - | - | - |
+| :---: | :---: | :---: | :---: | :---: |
 | False | class | finally | is | return |
 | None | continue | for | lambda | try |
 | True | def | from | nonlocal | while |
 | and | del | global | not | with |
 | as | elif | if | or | yield |
-| assert | else | import | pass |
+| assert | else | import | pass | |
 | break | except | in | raise | |
 
 Olhar todas as palavras-chave de uma só vez e tentar descobrir o que elas significam pode ser esmagador.
