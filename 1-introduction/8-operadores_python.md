@@ -132,12 +132,12 @@ Operadores bit a bit em Python
 
 | Operador | Significado | Exemplo |
 | --- | --- | --- |
-| `&` | AND bit a bit | x & y = 0 ( 0000 0000) |
-| `|` | OR bit a bit | x y = 14 ( 0000 1110) |
-| `~` | NOT bit a bit | ~ x = -11 ( 1111 0101) |
-| `^` | XOR bit a bit | x ^ y = 14 ( 0000 1110) |
-| `>>` |Deslocamento à direita bit a bit | x >> 2 = 2 ( 0000 0010) |
-| `<<` | Deslocamento à esquerda bit a bit | x << 2 = 40 ( 0010 1000) |
+| & | AND bit a bit | x & y = 0 ( 0000 0000) |
+| \| | OR bit a bit | x \| y = 14 ( 0000 1110) |
+| ~ | NOT bit a bit | ~ x = -11 ( 1111 0101) |
+| ^ | XOR bit a bit | x ^ y = 14 ( 0000 1110) |
+| >> |Deslocamento à direita bit a bit | x >> 2 = 2 ( 0000 0010) |
+| << | Deslocamento à esquerda bit a bit | x << 2 = 40 ( 0010 1000) |
 
 ## Operadores de atribuição
 
