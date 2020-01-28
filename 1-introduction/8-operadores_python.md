@@ -20,6 +20,7 @@ Aqui, `+` é o operador que executa a adição. `2` e `3` são os operandos e `5
 Operadores aritméticos são usados ​​para executar operações matemáticas como adição, subtração, multiplicação, etc.
 
 Operadores aritméticos em Python
+
 | Operador | Significado | Exemplo |
 | --- | --- | --- |
 | `+` | Adicione dois operandos ou mais unário | x + y; +2 |
@@ -65,6 +66,7 @@ x ** y = 50625
 Operadores de comparação são usados ​​para comparar valores. Ele retorna `True` ou `False` de acordo com a condição.
 
 Operadores de comparação em Python
+
 | Operador | Significado | Exemplo |
 | --- | --- | --- |
 | `>` | Maior que - Verdadeiro se o operando esquerdo for maior que o direito | x > y |
@@ -127,6 +129,7 @@ Por exemplo, 2 é `10` em binário e 7 é `111`.
 Na tabela abaixo: Seja x = 10 (`0000 1010` em binário) e y = 4 (`0000 0100` em binário)
 
 Operadores bit a bit em Python
+
 | Operador | Significado | Exemplo |
 | --- | --- | --- |
 | `&` | AND bit a bit | x & y = 0 ( 0000 0000) |
@@ -145,6 +148,7 @@ Operadores de atribuição são usados ​​no Python para atribuir valores a v
 Existem vários operadores compostos no Python assim a += 5adicionados à variável e posteriormente atribuídos à mesma. É equivalente a a = a + 5.
 
 Operadores de atribuição em Python
+
 | Operador | Exemplo | Equivalente a |
 | :---: | :---: | :---: |
 | = | x = 5 | x = 5 |
