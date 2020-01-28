@@ -147,19 +147,19 @@ Existem vários operadores compostos no Python assim a += 5adicionados à variá
 Operadores de atribuição em Python
 | Operador | Exemplo | Equivalente a |
 | --- | --- | --- |
-| `=` | `x = 5` | `x = 5` |
-| `+=` | `x += 5`` | x = x + 5` |
-| `-=` | `x -= 5` | `x = x - 5` |
-| `*=` | `x *= 5` | `x = x * 5` |
-| `/=` | `x /= 5` | `x = x / 5` |
-| `%=` | `x %= 5` | `x = x % 5` |
-| `//=` | `x //= 5` | `x = x // 5` |
-| `**=` | `x **= 5` | `x = x ** 5` |
-| `&=` | `x &= 5` | `x = x & 5` |
-| `|=` | `x |= 5` | `x = x | 5` |
-| `^=` | `x ^= 5` | `x = x ^ 5` |
-| `>>=` | `x >>= 5` | `x = x >> 5` |
-| `<<=` | `x <<= 5` | `x = x << 5` |
+| = | x = 5 | x = 5 |
+| += | x += 5 | x = x + 5 |
+| -= | x -= 5 | x = x - 5 |
+| *= | x *= 5 | x = x * 5 |
+| /= | x /= 5 | x = x / 5 |
+| %= | x %= 5 | x = x % 5 |
+| //= | x //= 5 | x = x // 5 |
+| **= | x **= 5 | x = x ** 5 |
+| &= | x &= 5 | x = x & 5 |
+| \|= | x \|= 5 | x = x \| 5 |
+| ^= | x ^= 5 | x = x ^ 5 |
+| >>= | x >>= 5 | x = x >> 5 |
+| <<= | x <<= 5 | x = x << 5 |
 
 ## Operadores especiais
 
