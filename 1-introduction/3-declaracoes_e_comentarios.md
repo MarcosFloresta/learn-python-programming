@@ -8,7 +8,7 @@ As instruções que um intérprete Python pode executar são chamadas de instru�
 
 ### Declaração de várias linhas
 
-No Python, o final de uma instrução é marcado por um caractere de nova linha. Mas podemos fazer uma declaração se estender por várias linhas com o caractere de continuação de linha (\). Por exemplo:
+No Python, o final de uma instrução é marcado por um caractere de nova linha. Mas podemos fazer uma declaração estender-se por várias linhas com o caractere de continuação de linha (\). Por exemplo:
 
 ```py
 a = 1 + 2 + 3 + \
@@ -79,7 +79,7 @@ Os comentários são muito importantes ao escrever um programa. Ele descreve o q
 
 No Python, usamos o símbolo de hash (#) para começar a escrever um comentário.
 
-Ele se estende até o caractere de nova linha. Os comentários são para programadores para melhor compreensão de um programa. O intérprete Python ignora o comentário.
+Ele se estende até o caractere de nova linha. Os comentários são para programadores, visando melhor compreensão de um programa. O intérprete Python ignora o comentário.
 
 ```py
 #This is a comment
@@ -99,7 +99,7 @@ Se tivermos comentários que estendem várias linhas, uma maneira de fazer isso 
 
 Outra maneira de fazer isso é usar aspas triplas, `'''`ou `"""`.
 
-Essas aspas triplas geralmente são usadas para seqüências de várias linhas. Mas eles também podem ser usados ​​como comentário de várias linhas. A menos que não sejam documentos, eles não geram código extra.
+Essas aspas triplas geralmente são usadas para sequências de várias linhas. Mas eles também podem ser usados ​​como comentário de várias linhas. A menos que não sejam documentos, eles não geram código extra.
 
 ```py
 """This is also a
