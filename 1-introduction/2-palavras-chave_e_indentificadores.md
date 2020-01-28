@@ -16,7 +16,7 @@ Todas as palavras-chave exceto True, Falsee e None estão em minúsculas e devem
 
 Palavras-chave em Python
 
-| - | - | - | - | - |
+|  |  |  |  |  |
 | :---: | :---: | :---: | :---: | :---: |
 | False | class | finally | is | return |
 | None | continue | for | lambda | try |
