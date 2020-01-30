@@ -1,74 +1,74 @@
-# What is Python (Programming)? - The Basics
+# O que é Python? - O básico
 
-Before getting started, lets get familiarized with the language first.
+Antes de começar, vamos nos familiarizar com o idioma primeiro.
 
-Python is a general-purpose language. It has wide range of applications from Web development (like: Django and Bottle), scientific and mathematical computing (Orange, SymPy, NumPy) to desktop graphical user Interfaces (Pygame, Panda3D).
+Python é uma linguagem de uso geral. Possui uma ampla gama de aplicações, desde desenvolvimento Web (como: Django e Bottle), computação científica e matemática (Orange, SymPy, NumPy) a interfaces gráficas de usuário para desktop (Pygame, Panda3D).
 
-The syntax of the language is clean and length of the code is relatively short. It's fun to work in Python because it allows you to think about the problem rather than focusing on the syntax.
+A sintaxe do idioma é limpa e o comprimento do código é relativamente curto. É divertido trabalhar em Python porque permite que você pense sobre o problema, em vez de se concentrar na sintaxe.
 
-**More information on Python Language:**
+**Mais informações sobre a linguagem Python:**
 
-## History of Python
+### História do Python
 
-Python is a fairly old language created by Guido Van Rossum. The design began in the late 1980s and was first released in February 1991.
+Python é uma linguagem bastante antiga criada por Guido Van Rossum. O design começou no final dos anos 80 e foi lançado pela primeira vez em fevereiro de 1991.
 
-## Why Python was created?
+### Por que o Python foi criado?
 
-In late 1980s, Guido Van Rossum was working on the Amoeba distributed operating system group. He wanted to use an interpreted language like ABC (ABC has simple easy-to-understand syntax) that could access the Amoeba system calls. So, he decided to create a language that was extensible. This led to design of a new language which was later named Python.
+No final dos anos 80, Guido Van Rossum estava trabalhando no grupo de sistemas operacionais distribuídos Amoeba. Ele queria usar uma linguagem interpretada como o ABC (o ABC possui uma sintaxe simples e fácil de entender) que poderia acessar as chamadas do sistema Amoeba. Então, ele decidiu criar uma linguagem que fosse extensível. Isso levou ao design de uma nova linguagem que mais tarde foi chamada de Python.
 
-## Why the name Python?
+### Por que o nome Python?
 
-No. It wasn't named after a dangerous snake. Rossum was fan of a comedy series from late seventies. The name "Python" was adopted from the same series "Monty Python's Flying Circus".
+Não. Não recebeu o nome de uma cobra perigosa. Rossum era fã de uma série de comédia do final dos anos setenta. O nome "Python" foi adotado da mesma série "Flying Circus de Monty Python".
 
-## Features of Python Programming
+### Recursos da programação Python
 
-1. A simple language which is easier to learn
-   Python has a very simple and elegant syntax. It's much easier to read and write Python programs compared to other languages like: C++, Java, C#. Python makes programming fun and allows you to focus on the solution rather than syntax.
-    If you are a newbie, it's a great choice to start your journey with Python.
-2. Free and open-source
-    You can freely use and distribute Python, even for commercial use. Not only can you use and distribute softwares written in it, you can even make changes to the Python's source code.
-    Python has a large community constantly improving it in each iteration.
-3. Portability
-    You can move Python programs from one platform to another, and run it without any changes.
-    It runs seamlessly on almost all platforms including Windows, Mac OS X and Linux.
-4. Extensible and Embeddable
-    Suppose an application requires high performance. You can easily combine pieces of C/C++ or other languages with Python code.
-    This will give your application high performance as well as scripting capabilities which other languages may not provide out of the box.
-5. A high-level, interpreted language
-    Unlike C/C++, you don't have to worry about daunting tasks like memory management, garbage collection and so on.
-    Likewise, when you run Python code, it automatically converts your code to the language your computer understands. You don't need to worry about any lower-level operations.
-6. Large standard libraries to solve common tasks
-    Python has a number of standard libraries which makes life of a programmer much easier since you don't have to write all the code yourself. For example: Need to connect MySQL database on a Web server? You can use MySQLdb library using import MySQLdb .
-    Standard libraries in Python are well tested and used by hundreds of people. So you can be sure that it won't break your application.
-7. Object-oriented
-    Everything in Python is an object. Object oriented programming (OOP) helps you solve a complex problem intuitively.
-    With OOP, you are able to divide these complex problems into smaller sets by creating objects.
+1. Uma linguagem simples e fácil de aprender
+    Python possui uma sintaxe muito simples e elegante. É muito mais fácil ler e escrever programas Python em comparação com outras linguagens como: C ++, Java, C #. O Python torna a programação divertida e permite que você se concentre na solução em vez da sintaxe.
+    Se você é iniciante, é uma ótima opção para começar sua jornada com o Python.
+2. Gratuito e de código aberto
+    Você pode usar e distribuir livremente o Python, mesmo para uso comercial. Não apenas você pode usar e distribuir softwares escritos nele, mas também pode fazer alterações no código-fonte do Python.
+    O Python tem uma grande comunidade constantemente aprimorando-o em cada iteração.
+3. Portabilidade
+    Você pode mover programas Python de uma plataforma para outra e executá-lo sem nenhuma alteração.
+    Ele roda perfeitamente em quase todas as plataformas, incluindo Windows, Mac OS X e Linux.
+4. Extensível e Incorporável
+    Suponha que um aplicativo exija alto desempenho. Você pode combinar facilmente partes de C / C ++ ou outras linguagens com o código Python.
+    Isso dará ao seu aplicativo alto desempenho e recursos de script que outros idiomas podem não fornecer imediatamente.
+5. Uma linguagem interpretada de alto nível
+    Ao contrário do C / C ++, você não precisa se preocupar com tarefas assustadoras, como gerenciamento de memória, coleta de lixo e assim por diante.
+    Da mesma forma, quando você executa o código Python, ele converte automaticamente o código no idioma que o seu computador entende. Você não precisa se preocupar com operações de nível inferior.
+6. Grandes bibliotecas padrão para resolver tarefas comuns O
+    Python possui várias bibliotecas padrão, o que facilita muito a vida de um programador, já que você não precisa escrever todo o código. Por exemplo: Precisa conectar o banco de dados MySQL em um servidor Web? Você pode usar a biblioteca MySQLdb usando import MySQLdb.
+    Bibliotecas padrão em Python são bem testadas e usadas por centenas de pessoas. Portanto, você pode ter certeza de que isso não interromperá seu aplicativo.
+7. Orientado a objetos
+    Tudo em Python é um objeto. A programação orientada a objetos (OOP) ajuda a resolver intuitivamente um problema complexo.
+    Com o OOP, você pode dividir esses problemas complexos em conjuntos menores criando objetos.
 
-## Applications of Python
+### Aplicações de Python
 
-**Web Applications**
+**Aplicativos da web**
 
-You can create scalable Web Apps using frameworks and CMS (Content Management System) that are built on Python. Some of the popular platforms for creating Web Apps are: Django, Flask, Pyramid, Plone, Django CMS.
+Você pode criar aplicativos da Web escaláveis ​​usando estruturas e CMS (Content Management System) criados no Python. Algumas das plataformas populares para a criação de aplicativos da Web são: Django, Flask, Pyramid, Plone, Django CMS.
 
-Sites like Mozilla, Reddit, Instagram and PBS are written in Python.
+Sites como Mozilla, Reddit, Instagram e PBS são escritos em Python.
 
-**Scientific and Numeric Computing**
+**Computação Científica e Numérica**
 
-There are numerous libraries available in Python for scientific and numeric computing. There are libraries like: SciPy and NumPy that are used in general purpose computing. And, there are specific libraries like: EarthPy for earth science, AstroPy for Astronomy and so on.
+Existem inúmeras bibliotecas disponíveis no Python para computação científica e numérica. Existem bibliotecas como: SciPy e NumPy que são usadas na computação de uso geral. E existem bibliotecas específicas como: EarthPy para ciências da terra, AstroPy para astronomia e assim por diante.
 
-Also, the language is heavily used in machine learning, data mining and deep learning.
+Além disso, o idioma é muito usado em aprendizado de máquina, mineração de dados e aprendizado profundo.
 
-**Creating software Prototypes**
+**Criando protótipos de software**
 
-Python is slow compared to compiled languages like C++ and Java. It might not be a good choice if resources are limited and efficiency is a must.
+O Python é lento em comparação com linguagens compiladas como C ++ e Java. Pode não ser uma boa escolha se os recursos forem limitados e a eficiência for obrigatória.
 
-However, Python is a great language for creating prototypes. For example: You can use Pygame (library for creating games) to create your game's prototype first. If you like the prototype, you can use language like C++ to create the actual game.
+No entanto, Python é uma ótima linguagem para criar protótipos. Por exemplo: Você pode usar o Pygame (biblioteca para criação de jogos) para criar o protótipo do seu jogo primeiro. Se você gosta do protótipo, pode usar uma linguagem como C ++ para criar o jogo real.
 
-**Good Language to Teach Programming**
+**Bom idioma para ensinar programação**
 
-Python is used by many companies to teach programming to kids and newbies.
+O Python é usado por muitas empresas para ensinar programação para crianças e iniciantes.
 
-It is a good language with a lot of features and capabilities. Yet, it's one of the easiest language to learn because of its simple easy-to-use syntax.
+É uma boa linguagem com muitos recursos e capacidades. No entanto, é um dos idiomas mais fáceis de aprender devido à sua sintaxe simples e fácil de usar.
 
 ## Reasons to Choose Python as First Language
 
@@ -102,81 +102,3 @@ It is a good language with a lot of features and capabilities. Yet, it's one of 
     - Learn Python subreddit
     - Google Forum for Python
     - Python Questions - Stack Overflow
-  
-## Run Python on Your Operating System
-
-You will find the easiest way to run Python on your computer (Windows, Mac OS X or Linux) in this section.
-
-### Install and Run Python in Mac OS X
-
-1. Go to Download Python page on the official site and click **Download Python 3.6.0** (You may see different version name).
-2. When the download is complete, open the package and follow the instructions. You will see "The installation was successful" message when Python is successfully installed.
-3. It's recommended to download a good text editor before you get started. If you are a beginner, I suggest you to download Sublime Text. It's free.
-4. The installation process is straight forward. Run the Sublime Text Disk Image file you downloaded and follow the instructions.
-5. Open Sublime Text and go to **File > New File** (Shortcut: **Cmd+N**). Then, save (**Cmd+S** or **File > Save**) the file with **.py** extension like: hello.py or first-program.py
-6. Write the code and save it again. For starters, you can copy the code below:
-    
-    ```py
-    print("Hello, World!")
-    ```
-
-    This simple program outputs "Hello, World!"
-7. Go to **Tool > Build** (Shortcut: **Cmd + B**). You will see the output at the bottom of Sublime Text.Congratulations, you've successfully run your first Python program.
-
-### Install and Run Python in Linux (Ubuntu)
-
-### Install and Run Python in Windows
-
-## Your First Python Program
-
-Often, a program called "Hello, World!" is used to introduce a new programming language to beginners. A "Hello, World!" is a simple program that outputs "Hello, World!".
-
-However, Python is one of the easiest language to learn, and creating "Hello, World!" program is as simple as writing print("Hello, World!"). So, we are going to write a different program.
-
-### Program to Add Two Numbers
-
-```py
-    # Add two numbers
-    num1 = 3
-    num2 = 5
-    sum = num1+num2
-    print(sum)
-```
-
-#### How this program works?
-
-**Line 1:** # Add two numbers
-
-Any line starting with `#` in Python programming is a comment.
-
-Comments are used in programming to describe the purpose of the code. This helps you as well as other programmers to understand the intent of the code. Comments are completely ignored by compilers and interpreters.
-
-**Line 2:** num1 = 3
-
-Here, `num1` is a variable. You can store a value in a variable. Here, 3 is stored in this variable.
-
-**Line 3:** num2 = 5
-
-Similarly, 5 is stored in `num2` variable.
-
-**Line 4:** sum = num1+num2
-
-The variables `num1` and `num2` are added using + operator. The result of addition is then stored in another variable `sum`.
-
-**Line 5:** print(sum)
-
-The `print()` function prints the output to the screen. In our case, it prints 8 on the screen.
-
-### Few Important Things to Remember
-
-To represent a statement in Python, newline (enter) is used. The use of semicolon at the end of the statement is optional (unlike languages like C/C++, PHP). In fact, it's recommended to omit semicolon at the end of the statement in Python.
-
-Instead of curly braces { }, indentations are used to represent a block.
-
-```py
-   im_a_parent:
-        im_a_child:
-            im_a_grand_child
-        im_another_child:
-            im_another_grand_child
-```
