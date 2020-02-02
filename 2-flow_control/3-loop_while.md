@@ -15,7 +15,7 @@ while test_expression:
     Body of while
 ```
 
-No loop while, a expressão de teste é verificada primeiro. O corpo do loop é inserido apenas se test_expression for avaliado como True. Após uma iteração, a expressão de teste é verificada novamente. Esse processo continua até a test_expressionavaliação de False.
+No loop while, a expressão de teste é verificada primeiro. O corpo do loop é inserido apenas se `test_expression` for avaliado como `True`. Após uma iteração, a expressão de teste é verificada novamente. Esse processo continua até a avaliação de `test_expression` for `False`.
 
 Em Python, o corpo do loop while é determinado por meio de indentação.
 
