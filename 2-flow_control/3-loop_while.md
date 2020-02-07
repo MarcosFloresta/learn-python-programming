@@ -21,48 +21,82 @@ Em Python, o corpo do loop while é determinado por meio de indentação.
 
 O corpo começa com recuo e a primeira linha sem recuo marca o fim.
 
-Python interpreta qualquer valor diferente de zero como True. Nonee 0são interpretados como False.
+Python interpreta qualquer valor diferente de zero como `True`. `None` e `0` são interpretados como False.
 
 Fluxograma do loop while
-while Loop na programação Python
+
+![Loop while  na programação Python](/images/whileLoopFlowchart.jpg)
 
 Exemplo: Python enquanto Loop
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+# Program to add natural
+# numbers upto 
+# sum = 1+2+3+...+n
+
+# To take input from the user,
+# n = int(input("Enter n: "))
+
+n = 10
+
+# initialize sum and counter
+sum = 0
+i = 1
+
+while i <= n:
+    sum = sum + i
+    i = i+1    # update counter
+
+# print the sum
+print("The sum is", sum)
+```
 
 Quando você executa o programa, a saída será:
 
-Digite n: 10
-A soma é 55
-No programa acima, a expressão de teste será Truecontanto que nossa variável de contador i seja menor ou igual a n (10 em nosso programa).
+```py
+Enter n: 10
+The sum is 55
+```
+
+No programa acima, a expressão de teste será `True` contanto que nossa variável de contador `i` seja menor ou igual a `n` (10 em nosso programa).
 
 Precisamos aumentar o valor da variável do contador no corpo do loop. Isso é muito importante (e principalmente esquecido). Não fazer isso resultará em um loop infinito (loop sem fim).
 
 Finalmente, o resultado é exibido.
 
-enquanto loop com else
-Igual ao loop for , também podemos ter um elsebloco opcional com loop while.
+## Loop while com else
 
-A elsepeça é executada se a condição no loop while for avaliada como False.
+Igual ao `loop for`, também podemos ter um bloco `else` opcional com loop while.
 
-O loop while pode ser finalizado com uma instrução break . Nesse caso, a elsepeça é ignorada. Portanto, a elseparte de um loop while é executada se nenhuma interrupção ocorrer e a condição for falsa.
+A peça `else` é executada se a condição no loop while for avaliada como `False`.
+
+O loop while pode ser finalizado com uma instrução `break` . Nesse caso, a peça `else` é ignorada. Portanto, a parte `else` de um loop while é executada se nenhuma interrupção ocorrer e a condição for falsa.
 
 Aqui está um exemplo para ilustrar isso.
 
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+```py
+# Example to illustrate
+# the use of else statement
+# with the while loop
+
+counter = 0
+
+while counter < 3:
+    print("Inside loop")
+    counter = counter + 1
+else:
+    print("Inside else")
+```
+
 Resultado
 
-Laço interno
-Laço interno
-Laço interno
-Dentro de mais
-Aqui, usamos uma variável de contador para imprimir a string Inside looptrês vezes.
+```txt
+Inside loop
+Inside loop
+Inside loop
+Inside else
+```
 
-Na quarta iteração, a condição em enquanto se torna False. Portanto, a elsepeça é executada.
+Aqui, usamos uma variável de contador para imprimir a string `Inside loop` três vezes.
+
+Na quarta iteração, a condição em `while` se torna False. Portanto, a parte else é executada.
