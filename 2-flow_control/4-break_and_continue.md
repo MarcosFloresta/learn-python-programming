@@ -2,7 +2,7 @@
 
 Neste artigo, você aprenderá a usar as instruções `break` e `continue` para alterar o fluxo de um loop.
 
-##  Qual é o uso de break e continue no Python?
+## Qual é o uso de break e continue no Python?
 
 No Python, as instruções break e continue podem alterar o fluxo de um loop normal.
 
@@ -54,32 +54,48 @@ The end
 
 Neste programa, iteramos através da `"string"` sequência. Verificamos se a letra é `"i"` e sobre a qual rompemos o ciclo. Portanto, vemos em nossa saída que todas as letras até `"i"` são impressas. Depois disso, o loop termina.
 
-Instrução Python continue
+## Instrução continue em Python
+
 A instrução continue é usada para ignorar o restante do código dentro de um loop apenas para a iteração atual. O loop não termina, mas continua com a próxima iteração.
 
 Sintaxe de Continuar
-continuar
-Fluxograma de continuar 
-Fluxograma da instrução continue em Python
+
+```PY
+continue
+```
+
+Fluxograma de continue
+
+![Fluxograma da instrução continue em Python](/images/continue-statement-flowchart.jpg)
 
 O funcionamento da instrução continue no loop for e while é mostrado abaixo.
 
-Como a instrução continue funciona em python
+![Como a instrução continue funciona em python](/images/how-continue-statment-works.jpg)
 
 Exemplo: Python continue
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+# Program to show the use of continue statement inside loops
+
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+
+print("The end")
+```
+
 Resultado
 
+```txt
 s
 t
 r
 n
 g
-O fim
+The end
+```
+
 Este programa é o mesmo do exemplo acima, exceto que a instrução break foi substituída por continue.
 
-Continuamos com o loop, se a string estiver "i", não executando o restante do bloco. Portanto, vemos em nossa saída que todas as letras, exceto, "i"são impressas
+Continuamos com o loop, se a string for `"i"`, não executando o restante do bloco. Portanto, vemos em nossa saída que todas as letras, exceto, `"i"` são impressas.
