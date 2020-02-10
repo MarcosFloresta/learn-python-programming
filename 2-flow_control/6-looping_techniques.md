@@ -1,4 +1,5 @@
-Técnicas de looping em Python
+#Técnicas de looping em Python
+
 Neste artigo, você aprenderá a controlar a execução de um loop usando instruções de controle de loop como break e continue.
 
 A programação Python oferece dois tipos de loop, o loop for e o while . Usando esses loops junto com instruções de controle de loop, como break e continue, podemos criar várias formas de loop.
