@@ -1,4 +1,4 @@
-#Técnicas de looping em Python
+# Técnicas de looping em Python
 
 Neste artigo, você aprenderá a controlar a execução de um loop usando instruções de controle de loop como break e continue.
 
@@ -79,7 +79,7 @@ Fluxograma de loop com condição no meio
 Exemplo # 3: Loop com condição no meio
 
 ```py
-# Program to illustrate a loop with condition in the middle. 
+# Program to illustrate a loop with condition in the middle.
 # Take input from the user untill a vowel is entered
 vowels = "aeiouAEIOU"
 # infinite loop
@@ -132,3 +132,12 @@ while True:
 ```
 
 Resultado
+
+```txt
+Press enter to roll the dice
+You got 1
+Roll again?(y/n) y
+Press enter to roll the dice
+You got 5
+Roll again?(y/n) n
+```
