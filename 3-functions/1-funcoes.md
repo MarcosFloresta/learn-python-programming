@@ -2,7 +2,8 @@
 
 Neste artigo, você aprenderá sobre funções; o que é uma função, a sintaxe, os componentes e os tipos de uma função. Além disso, você aprenderá a criar uma função no Python.
 
-O que é uma função no Python?
+## O que é uma função no Python?
+
 No Python, function é um grupo de instruções relacionadas que executam uma tarefa específica.
 
 As funções ajudam a dividir nosso programa em blocos menores e modulares. À medida que nosso programa cresce, as funções o tornam mais organizado e gerenciável.
@@ -10,9 +11,13 @@ As funções ajudam a dividir nosso programa em blocos menores e modulares. À m
 Além disso, evita repetições e torna o código reutilizável.
 
 Sintaxe da Função
-def nome_da_função (parâmetros):
-	"" "docstring" ""
-	afirmações)
+
+```py
+def function_name(parameters):
+    """docstring"""
+    statement(s)
+```
+
 Acima é mostrada uma definição de função que consiste nos seguintes componentes.
 
 A palavra-chave defmarca o início do cabeçalho da função.
