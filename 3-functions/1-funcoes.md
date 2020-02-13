@@ -20,9 +20,9 @@ def function_name(parameters):
 
 Acima é mostrada uma definição de função que consiste nos seguintes componentes.
 
-A palavra-chave defmarca o início do cabeçalho da função.
-Um nome de função para identificá-lo exclusivamente. A nomeação de funções segue as mesmas regras para escrever identificadores no Python .
-Parâmetros (argumentos) através dos quais passamos valores para uma função. Eles são opcionais.
+1. A palavra-chave `def` marca o início do cabeçalho da função.
+2. Um nome de função para identificá-lo exclusivamente. A nomeação de funções segue as mesmas regras para escrever identificadores no Python.
+3. Parâmetros (argumentos) através dos quais passamos valores para uma função. Eles são opcionais.
 Dois pontos (:) para marcar o final do cabeçalho da função.
 Seqüência de documentação opcional (docstring) para descrever o que a função faz.
 Uma ou mais instruções python válidas que compõem o corpo da função. As instruções devem ter o mesmo nível de indentação (geralmente 4 espaços).
