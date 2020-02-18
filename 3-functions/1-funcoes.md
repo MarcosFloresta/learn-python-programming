@@ -23,47 +23,62 @@ Acima é mostrada uma definição de função que consiste nos seguintes compone
 1. A palavra-chave `def` marca o início do cabeçalho da função.
 2. Um nome de função para identificá-lo exclusivamente. A nomeação de funções segue as mesmas regras para escrever identificadores no Python.
 3. Parâmetros (argumentos) através dos quais passamos valores para uma função. Eles são opcionais.
-Dois pontos (:) para marcar o final do cabeçalho da função.
-Seqüência de documentação opcional (docstring) para descrever o que a função faz.
-Uma ou mais instruções python válidas que compõem o corpo da função. As instruções devem ter o mesmo nível de indentação (geralmente 4 espaços).
-Uma returninstrução opcional para retornar um valor da função
+4. Dois pontos (:) para marcar o final do cabeçalho da função.
+5. Sequência de documentação opcional (docstring) para descrever o que a função faz.
+6. Uma ou mais instruções python válidas que compõem o corpo da função. As instruções devem ter o mesmo nível de indentação (geralmente 4 espaços).
+7. Uma instrução `return` opcional para retornar um valor da função.
+
 Exemplo de uma Função
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
-Como chamar uma função em python?
+
+```py
+def greet(name):
+    """This function greets to
+    the person passed in as
+    parameter"""
+    print("Hello, " + name + ". Good morning!")
+```
+
+## Como chamar uma função em python?
+
 Depois de definir uma função, podemos chamá-la de outra função, programa ou mesmo do prompt do Python. Para chamar uma função, basta digitar o nome da função com os parâmetros apropriados.
 
->>> greet ('Paulo')
-Olá paul. Bom Dia!
-	
+```py
+>>> greet('Paul')
+Hello, Paul. Good morning!
+```
 
-Nota:  Tente executar o código acima no shell Python para ver a saída.
+Nota:  Tente executar o código acima no Python shell para ver a saída.
 
-Docstring
+## Docstring
+
 A primeira string após o cabeçalho da função é chamada de docstring e é a abreviação de string de documentação. É usado para explicar resumidamente o que uma função faz.
 
 Embora opcional, a documentação é uma boa prática de programação. A menos que você se lembre do que comeu na semana passada, sempre documente seu código.
 
-No exemplo acima, temos uma string de documento imediatamente abaixo do cabeçalho da função. Geralmente, usamos aspas triplas para que a sequência de caracteres possa se estender até várias linhas. Essa sequência está disponível para nós como __doc__atributo da função.
+No exemplo acima, temos uma string de documento imediatamente abaixo do cabeçalho da função. Geralmente, usamos aspas triplas para que a sequência de caracteres possa se estender até várias linhas. Essa sequência está disponível para nós como atributo da função `__doc__` .
 
 Por exemplo:
 
-Tente executar o seguinte no shell Python para ver a saída.
+Tente executar o seguinte no Python shell para ver a saída.
 
+```py
 >>> print(greet.__doc__)
 This function greets to
-	the person passed into the
-	name parameter
-	
-A declaração de retorno
-A returninstrução é usada para sair de uma função e voltar ao local de onde foi chamada.
+    the person passed into the
+    name parameter
+```
 
-Sintaxe de retorno
-retornar [expression_list]
-Esta declaração pode conter expressão que é avaliada e o valor é retornado. Se não houver expressão na instrução ou a returnprópria instrução não estiver presente dentro de uma função, a função retornará o Noneobjeto.
+## A declaração de retorno
+
+A instrução `return` é usada para sair de uma função e voltar ao local de onde foi chamada.
+
+Sintaxe de return
+
+```py
+return [expression_list]
+```
+
+Esta declaração pode conter expressão que é avaliada e o valor é retornado. Se não houver expressão na instrução ou a returnprópria instrução não estiver presente dentro de uma função, a função retorn ará o Noneobjeto.
 
 Por exemplo:
 
