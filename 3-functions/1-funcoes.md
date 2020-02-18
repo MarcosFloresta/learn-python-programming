@@ -123,25 +123,33 @@ Eles são destruídos quando retornamos da função. Portanto, uma função não
 
 Aqui está um exemplo para ilustrar o escopo de uma variável dentro de uma função.
 
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+```py
+def my_func():
+    x = 10
+    print("Value inside function:",x)
+
+x = 20
+my_func()
+print("Value outside function:",x)
+```
+
 Resultado
 
-Valor dentro da função: 10
-Valor fora da função: 20
-	
-Aqui, podemos ver que o valor de x é 20 inicialmente. Mesmo que a função my_func()alterou o valor de x para 10, ela não afetou o valor fora da função.
+```txt
+Value inside function: 10
+Value outside function: 20
+```
 
-Isso ocorre porque a variável x dentro da função é diferente (local da função) da externa. Embora tenham o mesmo nome, são duas variáveis ​​diferentes com escopo diferente.
+Aqui, podemos ver que o valor de `x` é 20 inicialmente. Mesmo que a função `my_func()` alterou o valor de `x` para 10, ela não afetou o valor fora da função.
+
+Isso ocorre porque a variável `x` dentro da função é diferente (local da função) da externa. Embora tenham o mesmo nome, são duas variáveis ​​diferentes com escopo diferente.
 
 Por outro lado, variáveis ​​fora da função são visíveis a partir de dentro. Eles têm um escopo global.
 
-Podemos ler esses valores de dentro da função, mas não podemos alterá-los (gravá-los). A fim de modificar o valor de variáveis fora da função, eles devem ser declarados como variáveis globais usando a palavra-chave global.
+Podemos ler esses valores de dentro da função, mas não podemos alterá-los (gravá-los). A fim de modificar o valor de variáveis fora da função, eles devem ser declarados como variáveis globais usando a palavra-chave `global`.
 
-Tipos de funções
+## Tipos de funções
+
 Basicamente, podemos dividir funções nos dois seguintes tipos:
 
 Funções internas - Funções que são incorporadas ao Python.
