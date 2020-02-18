@@ -82,22 +82,39 @@ Esta declaração pode conter expressão que é avaliada e o valor é retornado.
 
 Por exemplo:
 
+```py
 >>> print(greet("May"))
 Hello, May. Good morning!
 None
-	
-Aqui, Noneé o valor retornado.
+```
+
+Aqui, `None` é o valor retornado.
 
 Exemplo de retorno
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
-Como funciona a função em Python?
-Como a função funciona em Python?
 
-Escopo e tempo de vida das variáveis
+```py
+def absolute_value(num):
+    """This function returns the absolute
+    value of the entered number"""
+
+    if num >= 0:
+        return num
+    else:
+        return -num
+
+# Output: 2
+print(absolute_value(2))
+
+# Output: 4
+print(absolute_value(-4))
+```
+
+Como funciona a função em Python?
+
+![Como a função funciona em Python?](/images/python-how-function-works_1.jpg)
+
+## Escopo e tempo de vida das variáveis
+
 O escopo de uma variável é a parte de um programa em que a variável é reconhecida. Parâmetros e variáveis ​​definidos dentro de uma função não são visíveis de fora. Portanto, eles têm um escopo local.
 
 A vida útil de uma variável é o período durante o qual a variável sai na memória. O tempo de vida das variáveis ​​dentro de uma função é contanto que a função seja executada.
