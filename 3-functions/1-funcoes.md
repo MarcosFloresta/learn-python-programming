@@ -152,5 +152,5 @@ Podemos ler esses valores de dentro da função, mas não podemos alterá-los (g
 
 Basicamente, podemos dividir funções nos dois seguintes tipos:
 
-Funções internas - Funções que são incorporadas ao Python.
-Funções definidas pelo usuário - Funções definidas pelos próprios usuários
+1. Funções internas - Funções que são incorporadas ao Python.
+2. Funções definidas pelo usuário - Funções definidas pelos próprios usuários.
