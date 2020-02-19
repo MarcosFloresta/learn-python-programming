@@ -27,39 +27,66 @@ Como chamamos essa função com dois argumentos, ela funciona sem problemas e n�
 
 Se o chamarmos com um número diferente de argumentos, o intérprete reclamará. Abaixo está uma chamada para esta função com um e sem argumentos, juntamente com suas respectivas mensagens de erro.
 
->>> greet ("Monica") # apenas um argumento
-TypeError: greet () ausente 1 argumento posicional necessário: 'msg'
->>> greet () # sem argumentos
-TypeError: greet () faltando 2 argumentos posicionais necessários: 'name' e 'msg'
-Argumentos de Função Variável
+```py
+>>> greet("Monica")    # only one argument
+TypeError: greet() missing 1 required positional argument: 'msg'
+```
+
+```py
+>>> greet()    # no arguments
+TypeError: greet() missing 2 required positional arguments: 'name' and 'msg'
+```
+
+## Argumentos de Função Variável
+
 Até agora, as funções tinham um número fixo de argumentos. No Python, existem outras maneiras de definir uma função que pode receber um número variável de argumentos.
 
 Três formas diferentes deste tipo são descritas abaixo.
 
-Argumentos padrão do Python
+### Argumentos padrão do Python
+
 Argumentos de função podem ter valores padrão em Python.
 
 Podemos fornecer um valor padrão para um argumento usando o operador de atribuição (=). Aqui está um exemplo.
 
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+```py
+def greet(name, msg = "Good morning!"):
+   """
+   This function greets to
+   the person with the
+   provided message.
 
-Nesta função, o parâmetro namenão possui um valor padrão e é necessário (obrigatório) durante uma chamada.
+   If message is not provided,
+   it defaults to "Good
+   morning!"
+   """
 
-Por outro lado, o parâmetro msgtem um valor padrão de "Good morning!". Portanto, é opcional durante uma chamada. Se um valor for fornecido, ele substituirá o valor padrão.
+   print("Hello",name + ', ' + msg)
+
+greet("Kate")
+greet("Bruce","How do you do?")
+```
+
+Nesta função, o parâmetro `name` não possui um valor padrão e é necessário (obrigatório) durante uma chamada.
+
+Por outro lado, o parâmetro `msg` tem um valor padrão de "Good morning!". Portanto, é opcional durante uma chamada. Se um valor for fornecido, ele substituirá o valor padrão.
 
 Qualquer número de argumentos em uma função pode ter um valor padrão. Mas uma vez que tenhamos um argumento padrão, todos os argumentos à direita também deverão ter valores padrão.
 
 Isso significa dizer que argumentos não padrão não podem seguir argumentos padrão. Por exemplo, se tivéssemos definido o cabeçalho da função acima como:
 
-def greet (msg = "Bom dia!", nome):
+```py
+def greet(msg = "Good morning!", name):
+```
+
 Ocorreríamos um erro como:
 
-SyntaxError: argumento não padrão segue o argumento padrão
-Argumentos de palavra-chave Python
+```py
+SyntaxError: non-default argument follows default argument
+```
+
+### Argumentos de palavra-chave Python
+
 Quando chamamos uma função com alguns valores, esses valores são atribuídos aos argumentos de acordo com sua posição.
 
 Por exemplo, na função acima greet(), quando o chamamos como greet("Bruce","How do you do?"), o valor "Bruce"é atribuído ao nome do argumento e da mesma forma "How do you do?"para msg .
