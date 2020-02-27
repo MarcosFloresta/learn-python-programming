@@ -66,25 +66,34 @@ print(y)
 
 Quando executamos o código, o resultado será:
 
-NameError: o nome 'y' não está definido
-A saída mostra um erro, porque estamos tentando acessar uma variável local y em um escopo global, enquanto a variável local funciona apenas dentro do  foo() escopo local ou local.
+```py
+NameError: name 'y' is not defined
+```
+
+A saída mostra um erro, porque estamos tentando acessar uma variável local `y` em um escopo global, enquanto a variável local funciona apenas dentro do `foo()` ou em escopo local.
 
 Vamos ver um exemplo de como uma variável local é criada no Python.
 
 Exemplo 3: Criar uma variável local
 Normalmente, declaramos uma variável dentro da função para criar uma variável local.
 
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+```py
+def foo():
+    y = "local"
+    print(y)
+
+foo()
+```
+
 Quando executamos o código, ele produzirá:
 
+```py
 local
-Vamos dar uma olhada no problema anterior, em que x era uma variável global e queríamos modificar x por dentro foo().
+```
 
-Variáveis ​​globais e locais
+Vamos dar uma olhada no problema anterior, em que `x` era uma variável global e queríamos modificar `x` por dentro `foo()`.
+
+## Variáveis ​​globais e locais
 
 Aqui, mostraremos como usar variáveis ​​globais e variáveis ​​locais no mesmo código.
 
