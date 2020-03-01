@@ -155,19 +155,32 @@ Variáveis ​​não locais são usadas na função aninhada cujo escopo local 
 
 Vamos ver um exemplo de como uma variável global é criada em Python.
 
-Usamos nonlocalpalavras-chave para criar variáveis ​​não-locais.
+Usamos a palavra-chave `nonlocal` para criar variáveis ​​não-locais.
 
 Exemplo 6: Criar uma variável não-local
-script.py
-IPython Shell
-
-Corre
-Sessão inativa
-Desenvolvido por DataCamp
+
+```py
+def outer():
+    x = "local"
+
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+
+    inner()
+    print("outer:", x)
+
+outer()
+```
+
 Quando executamos o código, o resultado será:
 
-interno: não-local
-exterior: não-local
-No código acima, há uma função aninhada inner(). Usamos nonlocalpalavras-chave para criar variáveis ​​não-locais. A inner()função é definida no escopo de outra função outer().
+```py
+inner: nonlocal
+outer: nonlocal
+```
+
+No código acima, há uma função aninhada `inner()`. Usamos a  palavra-chave `nonlocal` para criar variáveis ​​não-locais. A função `inner()` é definida no escopo de outra função `outer()`.
 
 Nota: Se alterarmos o valor da variável não local, as alterações aparecerão na variável local.
