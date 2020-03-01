@@ -98,16 +98,28 @@ Vamos dar uma olhada no problema anterior, em que `x` era uma variável global e
 Aqui, mostraremos como usar variáveis ​​globais e variáveis ​​locais no mesmo código.
 
 Exemplo 4: Usando variáveis ​​globais e locais no mesmo código
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+x = "global"
+
+def foo():
+    global x
+    y = "local"
+    x = x * 2
+    print(x)
+    print(y)
+
+foo()
+```
+
 Quando executamos o código, o resultado será:
 
-global global 
+```py
+global global
 local
-No código acima, declaramos x como uma variável global ey como uma variável local no foo(). Em seguida, usamos o operador de multiplicação *para modificar a variável global x  e imprimimos x e y .
+```
+
+No código acima, declaramos `x` como uma variável global e `y` como uma variável local no `foo()`. Em seguida, usamos o operador de multiplicação `*` para modificar a variável global `x` e imprimimos `x` e `y`.
 
 Após chamar o foo(), o valor de x se torna global globalporque usamos o x * 2para imprimir duas vezes global. Depois disso, imprimimos o valor da variável local y ie local.
 
