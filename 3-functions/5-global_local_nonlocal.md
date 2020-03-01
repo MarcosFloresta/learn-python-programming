@@ -121,25 +121,36 @@ local
 
 No código acima, declaramos `x` como uma variável global e `y` como uma variável local no `foo()`. Em seguida, usamos o operador de multiplicação `*` para modificar a variável global `x` e imprimimos `x` e `y`.
 
-Após chamar o foo(), o valor de x se torna global globalporque usamos o x * 2para imprimir duas vezes global. Depois disso, imprimimos o valor da variável local y ie local.
+Após chamar o `foo()`, o valor de `x` se torna `global global` porque usamos o `x * 2` para imprimir duas vezes `global`. Depois disso, imprimimos o valor da variável local `y` local.
 
 Exemplo 5: Variável global e variável local com o mesmo nome
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+x = 5
+
+def foo():
+    x = 10
+    print("local x:", x)
+
+foo()
+print("global x:", x)
+```
+
 Quando executamos o código, o resultado será:
 
+```py
 local x: 10
 global x: 5
-No código acima, usamos o mesmo nome x para a variável global e a variável local. Obtemos resultados diferentes quando imprimimos a mesma variável porque a variável é declarada nos dois escopos, ou seja, o escopo local dentro foo()e o escopo global fora foo().
+```
 
-Quando imprimimos a variável dentro da foo()saída local x: 10, isso é chamado de escopo local da variável.
+No código acima, usamos o mesmo nome `x` para a variável global e a variável local. Obtemos resultados diferentes quando imprimimos a mesma variável porque a variável é declarada nos dois escopos, ou seja, o escopo local dentro `foo()` e o escopo global fora `foo()`.
 
-Da mesma forma, quando imprimimos a variável fora da foo()saída global x: 5, isso é chamado de escopo global da variável.
+Quando imprimimos a variável dentro da `foo()` saída `local x: 10`, isso é chamado de escopo local da variável.
 
-Variáveis ​​não-locais
+Da mesma forma, quando imprimimos a variável fora da `foo()` saída `global x: 5` isso é chamado de escopo global da variável.
+
+## Variáveis ​​não-locais
+
 Variáveis ​​não locais são usadas na função aninhada cujo escopo local não está definido. Isso significa que a variável não pode estar no escopo local nem global.
 
 Vamos ver um exemplo de como uma variável global é criada em Python.
