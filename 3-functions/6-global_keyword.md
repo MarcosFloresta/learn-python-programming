@@ -1,17 +1,20 @@
-Palavra-chave global em Python
-Neste artigo, você aprenderá sobre a palavra-chave global, variável global e quando usar palavras-chave globais.
+# Palavra-chave global em Python
+
+Neste artigo, você aprenderá sobre a palavra-chave `global`, variável global e quando usar palavras-chave globais.
 
 Antes de ler este artigo, verifique se você tem alguns conceitos básicos de variáveis ​​globais, locais e não-locais do Python .
 
-Introdução à palavra-chave global
+## Introdução à palavra-chave global
+
 No Python, a globalpalavra-chave permite modificar a variável fora do escopo atual. É usado para criar uma variável global e fazer alterações na variável em um contexto local.
 
-Regras da palavra-chave global
-As regras básicas para globalpalavras-chave em Python são:
+## Regras da palavra-chave global
 
-Quando criamos uma variável dentro de uma função, ela é local por padrão.
-Quando definimos uma variável fora de uma função, ela é global por padrão. Você não precisa usar a globalpalavra-chave.
-Usamos globalpalavras-chave para ler e escrever uma variável global dentro de uma função.
+As regras básicas para palavras-chaveglobal em Python são:
+
+- Quando criamos uma variável dentro de uma função, ela é local por padrão.
+- Quando definimos uma variável fora de uma função, ela é global por padrão. Você não precisa usar a globalpalavra-chave.
+- Usamos palavras-chaveglobal para ler e escrever uma variável global dentro de uma função.
 O uso de globalpalavras-chave fora de uma função não tem efeito
 Uso da palavra-chave global (com exemplo)
 Vamos dar um exemplo.
