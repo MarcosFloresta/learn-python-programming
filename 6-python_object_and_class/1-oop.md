@@ -104,36 +104,91 @@ Então, acessamos o atributo class usando `__class __.species`. Os atributos de 
 Métodos são funções definidas dentro do corpo de uma classe. Eles são usados ​​para definir os comportamentos de um objeto.
 
 Exemplo 2: Criando métodos em Python
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+class Parrot:
+    
+    # instance attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    # instance method
+    def sing(self, song):
+        return "{} sings {}".format(self.name, song)
+
+    def dance(self):
+        return "{} is now dancing".format(self.name)
+
+# instantiate the object
+blu = Parrot("Blu", 10)
+
+# call our instance methods
+print(blu.sing("'Happy'"))
+print(blu.dance())
+```
+
 Quando executamos o programa, a saída será:
 
-Blu canta 'Feliz'
-Blu agora está dançando
-No programa acima, definimos dois métodos, ie sing()e dance(). Eles são chamados de método de instância porque são chamados em um objeto de instância, ou seja blu.
+```py
+Blu sings 'Happy'
+Blu is now dancing
+```
 
-Herança
+No programa acima, definimos dois métodos, i.e `sing()` e `dance()`. Eles são chamados de método de instância porque são chamados em um objeto de instância, ou seja `blu`.
+
+## Herança
+
 A herança é uma maneira de criar nova classe para usar detalhes da classe existente sem modificá-la. A classe recém-formada é uma classe derivada (ou classe filho). Da mesma forma, a classe existente é uma classe base (ou classe pai).
 
 Exemplo 3: Uso de herança em Python
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+# parent class
+class Bird:
+    
+    def __init__(self):
+        print("Bird is ready")
+
+    def whoisThis(self):
+        print("Bird")
+
+    def swim(self):
+        print("Swim faster")
+
+# child class
+class Penguin(Bird):
+
+    def __init__(self):
+        # call super() function
+        super().__init__()
+        print("Penguin is ready")
+
+    def whoisThis(self):
+        print("Penguin")
+
+    def run(self):
+        print("Run faster")
+
+peggy = Penguin()
+peggy.whoisThis()
+peggy.swim()
+peggy.run()
+```
+
 Quando executamos este programa, a saída será:
 
-O pássaro está pronto
-Pinguim está pronto
-Pinguim
-Nade mais rápido
-Corra mais rápido
-No programa acima, criamos duas classes, por exemplo, Bird (classe pai) e Penguin (classe filho). A classe filho herda as funções da classe pai. Podemos ver isso no swim()método Novamente, a classe filho modificou o comportamento da classe pai. Podemos ver isso no método whoisThis (). Além disso, estendemos as funções da classe pai, criando um novo run()método.
+```py
+Bird is ready
+Penguin is ready
+Penguin
+Swim faster
+Run faster
+```
 
-Além disso, usamos a super()função before __init__()method. Isso ocorre porque queremos extrair o conteúdo do __init__()método da classe pai para a classe filho.
+No programa acima, criamos duas classes, por exemplo, `Bird` (classe pai) e `Penguin` (classe filho). A classe filho herda as funções da classe pai. Podemos ver isso no swim()método Novamente, a classe filho modificou o comportamento da classe pai. Podemos ver isso no método whoisThis(). Além disso, estendemos as funções da classe pai, criando um novo método `run()` .
+
+Além disso, usamos a função `super()` depois do método `__init__()`. Isso ocorre porque queremos extrair o conteúdo do `__init__()' método da classe pai para a classe filho.
 
 Encapsulamento
 Usando OOP em Python, podemos restringir o acesso a métodos e variáveis. Isso evita que os dados sejam modificados diretamente, chamados de encapsulamento. Em Python, denotamos atributo privado usando sublinhado como prefixo, ou seja, único “_“ ou duplo “__“.
