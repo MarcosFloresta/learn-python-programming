@@ -59,27 +59,48 @@ Aqui, obj é objeto de classe Parrot.
 Suponha que tenhamos detalhes de papagaio. Agora, vamos mostrar como construir a classe e os objetos do papagaio.
 
 Exemplo 1: Criando classe e objeto em Python
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+class Parrot:
+
+    # class attribute
+    species = "bird"
+
+    # instance attribute
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# instantiate the Parrot class
+blu = Parrot("Blu", 10)
+woo = Parrot("Woo", 15)
+
+# access the class attributes
+print("Blu is a {}".format(blu.__class__.species))
+print("Woo is also a {}".format(woo.__class__.species))
+
+# access the instance attributes
+print("{} is {} years old".format( blu.name, blu.age))
+print("{} is {} years old".format( woo.name, woo.age))
+```
+
 Quando executamos o programa, a saída será:
 
-Blu é um pássaro
-Woo também é um pássaro
-Blu tem 10 anos
-Woo tem 15 anos
-No programa acima, criamos uma classe com o nome Parrot . Então, definimos atributos. Os atributos são uma característica de um objeto.
+```py
+Blu is a bird
+Woo is also a bird
+Blu is 10 years old
+Woo is 15 years old
+```
 
+No programa acima, criamos uma classe com o nome `Parrot` . Então, definimos atributos. Os atributos são uma característica de um objeto.
 
-Em seguida, criamos instâncias da classe Parrot . Aqui, blu e woo são referências (valor) aos nossos novos objetos.
+Em seguida, criamos instâncias da classe `Parrot` . Aqui, `blu` e woo são referências(valor) aos nossos novos objetos.
 
-Então, acessamos o atributo class usando __class __.species. Os atributos de classe são os mesmos para todas as instâncias de uma classe. Da mesma forma, acessamos os atributos da instância usando blu.namee blu.age. No entanto, os atributos da instância são diferentes para cada instância de uma classe.
+Então, acessamos o atributo class usando `__class __.species`. Os atributos de classe são os mesmos para todas as instâncias de uma classe. Da mesma forma, acessamos os atributos da instância usando `blu.name` e `blu.age`. No entanto, os atributos da instância são diferentes para cada instância de uma classe.
 
-Para saber mais sobre classes e objetos, acesse Classes e objetos Python.
+## Métodos
 
-Métodos
 Métodos são funções definidas dentro do corpo de uma classe. Eles são usados ​​para definir os comportamentos de um objeto.
 
 Exemplo 2: Criando métodos em Python
