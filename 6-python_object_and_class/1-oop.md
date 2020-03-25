@@ -190,41 +190,89 @@ No programa acima, criamos duas classes, por exemplo, `Bird` (classe pai) e `Pen
 
 Além disso, usamos a função `super()` depois do método `__init__()`. Isso ocorre porque queremos extrair o conteúdo do `__init__()' método da classe pai para a classe filho.
 
-Encapsulamento
+## Encapsulamento
+
 Usando OOP em Python, podemos restringir o acesso a métodos e variáveis. Isso evita que os dados sejam modificados diretamente, chamados de encapsulamento. Em Python, denotamos atributo privado usando sublinhado como prefixo, ou seja, único “_“ ou duplo “__“.
 
 Exemplo 4: Encapsulamento de dados em Python
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+class Computer:
+
+    def __init__(self):
+        self.__maxprice = 900
+
+    def sell(self):
+        print("Selling Price: {}".format(self.__maxprice))
+
+    def setMaxPrice(self, price):
+        self.__maxprice = price
+
+c = Computer()
+c.sell()
+
+# change the price
+c.__maxprice = 1000
+c.sell()
+
+# using setter function
+c.setMaxPrice(1000)
+c.sell()
+```
+
 Quando executamos este programa, a saída será:
 
-Preço de Venda: 900
-Preço de Venda: 900
-Preço de Venda: 1000
-No programa acima, definimos uma classe Computador . Usamos o __init__()método para armazenar o preço máximo de venda do computador. Tentamos modificar o preço. No entanto, não podemos alterá-lo porque o Python trata o __maxprice como atributos privados. Para alterar o valor, usamos uma função setter, ou seja, setMaxPrice()que leva o preço como parâmetro.
+```py
+Selling Price: 900
+Selling Price: 900
+Selling Price: 1000
+```
 
-Polimorfismo
+No programa acima, definimos uma classe `Computer` . Usamos o método `__init__()` para armazenar o preço máximo de venda do computador. Tentamos modificar o preço. No entanto, não podemos alterá-lo porque o Python trata o `__maxprice` como atributos privados. Para alterar o valor, usamos uma função setter, ou seja, `setMaxPrice()` que leva o preço como parâmetro.
+
+## Polimorfismo
+
 Polimorfismo é uma capacidade (em OOP) de usar interface comum para múltiplas formas (tipos de dados).
 
 Suponhamos que precisamos colorir uma forma, existem várias opções de forma (retângulo, quadrado, círculo). No entanto, poderíamos usar o mesmo método para colorir qualquer forma. Este conceito é chamado polimorfismo.
 
 Exemplo 5: Usando polimorfismo em Python
-script.py
-IPython Shell
-
-Corre
-Desenvolvido por DataCamp
+
+```py
+class Parrot:
+
+    def fly(self):
+        print("Parrot can fly")
+    
+    def swim(self):
+        print("Parrot can't swim")
+
+class Penguin:
+
+    def fly(self):
+        print("Penguin can't fly")
+    
+    def swim(self):
+        print("Penguin can swim")
+
+# common interface
+def flying_test(bird):
+    bird.fly()
+
+#instantiate objects
+blu = Parrot()
+peggy = Penguin()
+
+# passing the object
+flying_test(blu)
+flying_test(peggy)
+```
+
 Quando executamos o programa acima, a saída será:
 
-Papagaio pode voar
-Pinguim não pode voar
-No programa acima, definimos duas classes Parrot e Penguin . Cada um deles tem um método comum fly(). No entanto, suas funções são diferentes. Para permitir o polimorfismo, criamos uma interface comum, ou seja, flying_test()função que pode receber qualquer objeto. Em seguida, passamos os objetos blu e peggy na flying_test()função, que foram executados de forma eficaz.
+```py
+Parrot can fly
+Penguin can't fly
+```
 
-Pontos-chave a serem lembrados:
-A programação fica fácil e eficiente.
-A classe é compartilhável, portanto, os códigos podem ser reutilizados.
-A produtividade dos programadores aumenta
-Os dados são seguros com a abstração de dados.
+No programa acima, definimos duas classes `Parrot` e `Penguin`. Cada um deles tem um método comum `fly()`. No entanto, suas funções são diferentes. Para permitir o polimorfismo, criamos uma interface comum, ou seja, função `flying_test()` que pode receber qualquer objeto. Em seguida, passamos os objetos `blu` e `peggy` na função `flying_test()`, que foram executados de forma eficaz.
