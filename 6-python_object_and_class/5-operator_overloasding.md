@@ -165,6 +165,7 @@ Da mesma forma, as funções especiais que precisamos implementar, para sobrecar
 
 Sobrecarga de operador de comparação em Python
 | Operador | Expressão | Internamente |
+| --- | --- | --- |
 | Menor que | p1 < p2 | `p1.__lt__(p2)` |
 | Menos que ou igual a | p1 <= p2 | `p1.__le__(p2)` |
 | Igual a | p1 == p2 | `p1.__eq__(p2)` |
