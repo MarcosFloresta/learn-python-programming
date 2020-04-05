@@ -121,7 +121,7 @@ Operador sobrecarregando funções especiais em Python
 | Deslocamento à esquerda bit a bit | p1 << p2 | p1.__lshift__(p2) |
 | Deslocamento à direita bit a bit | p1 >> p2 | p1.__rshift__(p2) |
 | AND bit a bit | p1 & p2 | p1.__e__(p2) |
-| OR bit a bit| p1 pipe p2 | p1.__ou__(p2) |
+| OR bit a bit| p1 \| p2 | p1.__ou__(p2) |
 | Bitwise XOR | p1 ^ p2 | p1.__xor__(p2) |
 | Bitwise NOT | ~ p1 | p1.__inverter__() |
 
