@@ -111,19 +111,19 @@ O que realmente acontece é que, quando o fizer `p1 + p2`, o Python chamará o `
 Operador sobrecarregando funções especiais em Python
 | Operador | Expressão | Internamente |
 | --- | --- | --- |
-| Adição | p1 + p2 | p1.__adicione__(p2) |
-| Subtração| p1 - ​​p2 | p1.sub__(p2) |
-| Multiplicação | p1 * p2 | p1.__mul__(p2) |
-| Poder | p1 ** p2 | p1.__pow__(p2) |
-| Divisão | p1 / p2 | p1.__truediv__(p2) |
-| Divisão Floor | p1 // p2 | p1.__floordiv__(p2) |
-| Restante (módulo)| p1 % p2 | p1.__mod__(p2) |
-| Deslocamento à esquerda bit a bit | p1 << p2 | p1.__lshift__(p2) |
-| Deslocamento à direita bit a bit | p1 >> p2 | p1.__rshift__(p2) |
-| AND bit a bit | p1 & p2 | p1.__e__(p2) |
-| OR bit a bit| p1 \| p2 | p1.__ou__(p2) |
-| Bitwise XOR | p1 ^ p2 | p1.__xor__(p2) |
-| Bitwise NOT | ~ p1 | p1.__inverter__() |
+| Adição | p1 + p2 | `p1.__adicione__(p2)` |
+| Subtração| p1 - ​​p2 | `p1.sub__(p2)` |
+| Multiplicação | p1 * p2 | `p1.__mul__(p2)` |
+| Poder | p1 ** p2 | `p1.__pow__(p2)` |
+| Divisão | p1 / p2 | `p1.__truediv__(p2)` |
+| Divisão Floor | p1 // p2 | `p1.__floordiv__(p2)` |
+| Restante (módulo)| p1 % p2 | `p1.__mod__(p2)` |
+| Deslocamento à esquerda bit a bit | p1 << p2 | `p1.__lshift__(p2)` |
+| Deslocamento à direita bit a bit | p1 >> p2 | `p1.__rshift__(p2)` |
+| AND bit a bit | p1 & p2 | `p1.__e__(p2)` |
+| OR bit a bit| p1 \| p2 | `p1.__ou__(p2)` |
+| Bitwise XOR | p1 ^ p2 | `p1.__xor__(p2)` |
+| Bitwise NOT | ~ p1 | `p1.__inverter__()` |
 
 ## Sobrecarregando operadores de comparação em Python
 
@@ -165,9 +165,9 @@ Da mesma forma, as funções especiais que precisamos implementar, para sobrecar
 
 Sobrecarga de operador de comparação em Python
 | Operador | Expressão | Internamente |
-| Menor que | p1 < p2 | p1.__lt__(p2) |
-| Menos que ou igual a | p1 <= p2 | p1.__le__(p2) |
-| Igual a | p1 == p2 | p1.__eq__(p2) |
-| Diferente de | p1 != p2 | p1.__ne__(p2) |
-| Maior que | p1 > p2 | p1.__gt__(p2) |
-| Melhor que ou igual a | p1 >= p2 | p1.__ge__(p2) |
+| Menor que | p1 < p2 | `p1.__lt__(p2)` |
+| Menos que ou igual a | p1 <= p2 | `p1.__le__(p2)` |
+| Igual a | p1 == p2 | `p1.__eq__(p2)` |
+| Diferente de | p1 != p2 | `p1.__ne__(p2)` |
+| Maior que | p1 > p2 | `p1.__gt__(p2)` |
+| Melhor que ou igual a | p1 >= p2 | `p1.__ge__(p2)` |
